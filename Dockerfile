@@ -6,4 +6,4 @@ COPY . ./
 
 RUN pip install flask
 
-CMD gunicorn --bind :$PORT app:app
+CMD p_g config.sh --bind :$PORT app:app
