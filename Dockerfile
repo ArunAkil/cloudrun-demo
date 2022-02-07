@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . ./
 
-RUN pip install -r requirements.txt
+RUN pip install flask
 
 CMD pg_config.sh :$PORT app:app
